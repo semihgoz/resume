@@ -1,116 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>{{ name }}. {{ title }}</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container page">
-      <div class="row">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="container page">
+    <div class="row">
         <div class="col-md-6 col-print-6">
-          <h1>{{ name }}<br />{{ title }}</h1>
-          <p>
-            <time class="text-muted">Last update: {{ updated }}</time>
-          </p>
-          <p>
+            <h1>{{ name }}<br/>{{ title }}</h1>
+            <p>
+                <time class="text-muted">Last update: {{ updated }}</time>
+            </p>
+            <p>
             <span class="screen">
               <a href="{{ pdfFileName }}">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                 Download PDF version
               </a>
             </span>
-            <span class="print">
+                <span class="print">
               The online version is available at
               <a href="{{ baseUrl }}" class="text-nowrap">
                 <i class="fa fa-github" aria-hidden="true"></i>
                 {{ baseUrl }}
               </a>
             </span>
-          </p>
+            </p>
         </div>
         <div class="col-md-6 col-print-6">
-          <dl class="row">
-            {{#each facts}}
-            <dt class="col-md-3">{{ @key }}:</dt>
-            <dd class="col-md-9">{{{ this }}}</dd>
-            {{/each}}
-          </dl>
+            <dl class="row">
+                {{#each facts}}
+                <dt class="col-md-3">{{ @key }}:</dt>
+                <dd class="col-md-9">{{{ this }}}</dd>
+                {{/each}}
+            </dl>
         </div>
-      </div>
+    </div>
 
-      <p>
-        I am a senior developer in Etiya with Marvel project. I am also one of the Back-End core team member in the
+    <p>
+        I am a senior developer in sahibinden.com. I am also one of the Back-End core team member in the
         project. My tasks are software design and development.
-      </p>
-      <p>
-        The team I am in, we mainly deal with product development and also fixing occasional bugs from application at
-        production environment.
-      </p>
+    </p>
+    <p>
+        The team I am in, we mainly deal with product development and fixing occasional bugs from application at
+        production environment also we do develop migration to microservice architecture.
+    </p>
 
-      {{#each skills}}
-      <p>{{title}}:</p>
-      <ul>
+    {{#each skills}}
+    <p>{{title}}:</p>
+    <ul>
         {{#each props}}
         <li>{{this}}</li>
         {{/each}}
-      </ul>
-      {{/each}}
+    </ul>
+    {{/each}}
 
-      <h2 class="mb-4">Professional Experience</h2>
-      {{#each workHistory}}
-      <div class="card mb-4">
+    <h2 class="mb-4">Professional Experience</h2>
+    {{#each workHistory}}
+    <div class="card mb-4">
         <div class="card-body">
-          <h3>{{ title }}</h3>
-          <p class="d-flex flex-column text-muted">
-            <span>{{ company }}</span>
-            <small>{{ date.start }} - {{ date.end }}</small>
-          </p>
+            <h3>{{ title }}</h3>
+            <p class="d-flex flex-column text-muted">
+                <span>{{ company }}</span>
+                <small>{{ date.start }} - {{ date.end }}</small>
+            </p>
 
-          {{#each contents}}
-          <p>{{title}}:</p>
-          <ul>
-            {{#each props}}
-            <li>{{this}}</li>
+            {{#each contents}}
+            <p>{{title}}:</p>
+            <ul>
+                {{#each props}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
             {{/each}}
-          </ul>
-          {{/each}}
-
-          <div>
-            {{#each badges }}
-            <span class="badge badge-primary">{{ this }}</span>
-            {{/each}}
-          </div>
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
         </div>
-      </div>
-      {{/each}}
+    </div>
+    {{/each}}
 
-      <h2>Education</h2>
-      {{#each educations}}
-      <p class="d-flex flex-column lead mb-0">
+    <h2>Education</h2>
+    {{#each educations}}
+    <p class="d-flex flex-column lead mb-0">
         {{ title }}
         <small>{{ description }}</small>
-      </p>
-      <small>{{ date.start }} - {{ date.end }}</small>
-      {{/each}}
+    </p>
+    <small>{{ date.start }} - {{ date.end }}</small>
+    {{/each}}
 
-      <h2 class="my-4">Affiliations</h2>
-      <ul>
+    <h2 class="my-4">Affiliations</h2>
+    <ul>
         {{#each affiliations}}
         <li>{{ this }}</li>
         {{/each}}
-      </ul>
+    </ul>
 
-      <h2 class="mb-4">Additional Information</h2>
-      <ul>
+    <h2 class="mb-4">Additional Information</h2>
+    <ul>
         {{#each additional}}
         <li>{{ this }}</li>
         {{/each}}
-      </ul>
-    </div>
-  </body>
+    </ul>
+</div>
+</body>
 </html>

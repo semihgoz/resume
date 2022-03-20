@@ -1,81 +1,114 @@
 module.exports = {
   name: 'Semih Göz',
-  title: 'Back-End Developer (Spring EJB)',
+  title: 'Software Engineer as Back-End Developer',
   facts: {
-    Residence: 'Bayrampaşa/İstanbul',
-    Homepage: `<a href="https://github.com/semihgoz61">
-                  <span class="print">https://github.com/semihgoz61</span>
-                  <span class="screen">https://github.com/semihgoz61</span>
+    Residence: 'Merkez/Çanakkale',
+    Homepage: `<a href="https://semihgoz.com">
+                  <span class="print">https://semihgoz.com</span>
+                  <span class="screen">semihgoz.com</span>
                 </a>`,
     Email: '<a href="mailto:semihgoz61@gmail.com">semihgoz61@gmail.com</a>',
     LinkedIn: '<a href="https://www.linkedin.com/in/semihgoz/">https://www.linkedin.com/in/semihgoz/</a>',
-    Phone: '553 862 43 61',
+    Phone: '+90 (553) 862-4361',
   },
   skills: [
     {
       title: 'General',
-      props: ['Core Java', 'Spring', 'Hibernate'],
+      props: ['Core Java (8, 11, 17)', 'Spring', 'Microservice Architecture', 'RDBMS and NoSQL'],
     },
     {
       title: 'Technical',
       props: [
         'Design pattern from GOF',
-        'Exception Handling RFC-7807',
         'OOP with Java',
         'Layered Architecture',
+        'Microservice Architecture',
         'SSO with OAuth2',
+        'Cluster System Design'
       ],
     },
     {
       title: 'Back-End Advanced',
       props: [
-        'Spring Boot',
-        'Spring Freamwork 5',
-        'Hibernate Native or JPA',
-        'RDBMS (Posgresql, MariaDb)',
-        'NoSQL (Redis)',
-        'JCache Hazelcast, Redis, Ehcache',
-        'Spring Boot Starters Data-Rest, Security, Validation, OpenApiDoc (Swagger3), Hateoas, etc.',
-        'Lombok',
-        'Junit (5)',
+        'Java',
+        'Spring Ecosystem',
+        'ORM (Hibernate Native or JPA)',
+        'RDBMS (Postgres, MySQL-MariaDb)',
+        'NoSQL (Mongo, Hadoop, Redis, Memcached, ClickHouse, Casandra)',
+        'JCache Hazelcast, Ehcache',
+        'Spring Boot Starters',
+        'Spring Cloud Starters',
+        'Bash scripting',
+        'Queue (Kafka, ActiveMq)',
+        'Lombok (with experimental)',
+        'Junit 5, Mockito, MockNeat',
         'Serializations Jackson, Gson, Kryo',
-        'Rest-Communucation ApacheHttpClient, RestTemplate (From AppacheHttpClient), Retrofit (From Okhttp), Feign (With ApacheHttpClient)',
+        'HashiCorp products eg. Vault, Consul',
+        'Exception Handling RFC-7807',
       ],
     },
     {
       title: 'Back-End Intermediate',
       props: [
-        'Spring Cloud Eureka(Name-Server), Config-Server, Admin (With actuator), Hystirx, Feign, Spring-Gateway or Zool',
-        'Keycloak',
+        'Reactive Programming',
+        'DevOps Instruments',
+      ],
+    },
+    {
+      title: 'Front-End Beginner',
+      props: [
+        'Javascript (ES6)',
+        'ReactJs',
       ],
     },
     {
       title: 'Tools',
-      props: ['Git', 'Maven', 'Jenkins', 'Docker'],
+      props: ['Git', 'Maven', 'Jenkins', 'Docker', 'npm', 'GitHub', 'Bitbucket', 'Jira'],
     },
   ],
   workHistory: [
     {
       title: 'Back-End Developer',
+      company: 'sahibinden.com',
+      date: {
+        start: 'February 2021',
+        end: 'present',
+      },
+      contents: [
+        {
+          title: 'Sahibinden.com, Senior Back-End Developer (https://sahibinden.com)',
+          props: [
+            'Learning to work with big-data',
+            'Developing a system with quite a large number of users (over 62 million).',
+            'Learning Cluster system design.',
+            'Participate in planning, developing and testing a business from start to finish.',
+            'Having opportunity to experience new technologies during the microservice migration.',
+          ],
+        },
+      ],
+      badges: ['Core Java (11)', 'RDBMS and NoSQL', 'Spring Framework', 'Spring Boot', 'Spring Cloud', 'Cluster System Design', 'DevOps', 'Bash Scripting'],
+    },
+    {
+      title: 'Back-End Developer',
       company: 'Etiya Bilgi Teknolojileri, İstanbul',
       date: {
         start: 'Oct 2019',
-        end: 'Current',
+        end: 'February 2021',
       },
       contents: [
         {
           title: 'Marvel Project, Back-End Developer (https://videotron.com/en)',
           props: [
-            'I am learning to work with a team that offers corporate projects and solutions',
+            'Learned to work with a team that offers corporate projects and solutions',
             'I try to improve the existing complex project with existing competencies.',
-            'We make improvements on compact projects that produce large systems and permanent solutions, such as Keycloak, Amazon WSO2, etc.',
-            'Integration of different projects and we make improvements suitable for this integration, for example payment system (i2i), SPA etc.',
-            'We learn to adapt to any unit quickly by supporting different teams.',
-            'We learn the concept of Continuous Integration and Delivery',
+            'Improvements on compact projects that produce large systems and permanent solutions, such as Keycloak, Amazon WSO2, etc.',
+            'Integration of different projects and improvements suitable for this integration, for example payment system (i2i), SPA etc.',
+            'Learned to adapt to any team and project quickly by supporting different teams.',
+            'Learned the concept of Continuous Integration and Delivery',
           ],
         },
       ],
-      badges: ['Core Java', 'JPA/Hiberante', 'Spring Freamwork', 'Spring Boot'],
+      badges: ['Core Java (8)', 'JPA/Hibernate', 'Spring Framework', 'Spring Boot'],
     },
     {
       title: 'Back-End Developer',
@@ -86,16 +119,16 @@ module.exports = {
       },
       contents: [
         {
-          title: 'UMB mühendislik spolia project from nodeJs to Spring',
+          title: 'Worked on nodejs based project while transitioning to Java Spring',
           props: [
             'The company I joined to transition from NodeJs to the spring ecosystem',
-            'I did work that I thought I did good work on spring with the responsibility I took by acquiring introductory level spring knowledge.',
-            'Develop better solutions with design patterns in recent times',
-            'I met microservice architecture',
+            'While I had a beginner\'s knowledge of Spring, I further advanced this knowledge thanks to this project.',
+            'Learned design patterns structures',
+            'Learned microservice architecture',
           ],
         },
       ],
-      badges: ['Core Java', 'JPA/Hiberante', 'Spring Freamwork', 'Spring Boot', 'NodeJs', 'Spring Cloud'],
+      badges: ['Core Java (11)', 'JPA/Hibernate', 'Spring Framework', 'Spring Boot', 'NodeJs', 'Spring Cloud'],
     },
   ],
   educations: [
@@ -109,10 +142,10 @@ module.exports = {
     },
   ],
   affiliations: [
-    'Erhan Günal, Software Team Leader, 0 507 614 09 64',
-    'Sonay Ergünlü, Senior Software Developer (Back-End) 0 537 682 93 53',
-    'Recep Şengüler, Senior Software Developer (Back-End) 0 537 927 51 72',
-    'Samet Gündoğmuş, Senior Software Developer (Mobile) 0 537 216 94 81',
+    'Erhan Günal, Software Team Leader, 0 (507) 614-0964',
+    'Sonay Ergünlü, Senior Software Developer (Back-End) 0 (537) 682-9353',
+    'Recep Şengüler, Senior Software Developer (Back-End) 0 (537) 927-5172',
+    'Samet Gündoğmuş, Senior Software Developer (Mobile) 0 (537) 216-9481',
   ],
   additional: ['Military Services: Completed', 'No smoking'],
 };
